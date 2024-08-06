@@ -74,6 +74,7 @@ a {
 .photo-slideshow .curr-image {
   background-image: url("./img/DSC06884.JPG");
   background-size: cover;
+  background-position: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -82,7 +83,7 @@ a {
 }
 
 .contact-blurb {
-  margin: 0 auto;
+  margin: 0 auto 5rem auto;
   max-width: 810px;
   font-size: 1.25rem;
   text-align: center;
@@ -94,4 +95,53 @@ a {
 .contact-blurb a {
   color: #1B263B;
   font-weight: bold;
+}
+
+@media (max-width: 1080px) {
+  .section-main {
+    flex-direction: column-reverse;
+  }
+
+  .section-main .main-blurb {
+    margin-left: 0;
+  }
+
+  .section-main .photo-slideshow {
+    padding-bottom: 58%;
+    margin-top: 5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  header .branding {
+    font-size: 2rem;
+  }
+
+  header .contact {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  main {
+    padding: 0 2rem;
+  }
+
+  .section-main .photo-slideshow {
+    padding-bottom: 54%;
+  }
+
+  .contact-blurb {
+    border: 2px solid #1B263B;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-main .photo-slideshow {
+    padding-bottom: 51%;
+  }
 }
