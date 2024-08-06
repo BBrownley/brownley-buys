@@ -71,7 +71,32 @@ a {
   flex: 4;
 }
 
-.photo-slideshow .curr-image {
+.photo-slideshow #prev-btn, .photo-slideshow #next-btn {
+  /* background-color: black; */
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  width: 2rem;
+  padding: 0 1rem;
+}
+
+.photo-slideshow #prev-btn:hover, .photo-slideshow #next-btn:hover {
+  cursor: pointer;
+}
+
+.photo-slideshow #prev-btn {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.1) , rgba(0, 0, 0, 0.699));
+  display: flex;
+}
+
+.photo-slideshow #next-btn {
+  right: 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) , rgba(0, 0, 0, 0.699));
+  display: flex;
+}
+
+.photo-slideshow #curr-image {
   background-image: url("./img/DSC06884.JPG");
   background-size: cover;
   background-position: center;
