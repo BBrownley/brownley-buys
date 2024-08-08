@@ -29,6 +29,9 @@ body {
 h1 {
   font-size: 3rem;
   font-weight: bold;
+  /* text-align: center; */
+  padding-right: 1rem;
+  line-height: 3rem;
 }
 
 a {
@@ -145,6 +148,11 @@ a {
 
   header .branding {
     font-size: 2rem;
+    text-align: center;
+  }
+
+  header .branding h1 {
+    padding-right: 0;
   }
 
   header .contact {
